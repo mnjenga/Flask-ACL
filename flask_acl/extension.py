@@ -189,7 +189,7 @@ class ACLManager(object):
             elif not stealth and self.login_view:
                 if flash_message is not False:
                     flask.flash(flash_message or 'Please login for access.')
-                raise _Redirect(flask.url_for(security.login) + '?' + urlencode(dict(next=
+                raise _Redirect(/login + '?' + urlencode(dict(next=
                     flask.request.script_root + flask.request.path
                 )))
             else:
